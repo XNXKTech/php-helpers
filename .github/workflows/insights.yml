@@ -1,0 +1,38 @@
+name: insights
+
+on: push
+
+jobs:
+  phpinsights:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v1
+      with:
+        php-version: '7.1.3'
+        extension-csv: mbstring, dom, fileinfo
+        coverage: xdebug
+
+    - name: Get composer cache directory
+      id: composer-cache
+      run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+    - name: Cache composer dependencies
+      uses: actions/cache@v1
+      with:
+        path: ${{ steps.composer-cache.outputs.dir }}
+        key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+        restore-keys: ${{ runner.os }}-composer-
+
+    - name: Composer dependencies
+      run: composer install --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+
+    - name: phpinsights
+      uses: stefanzweifel/laravel-phpinsights-action@v1.0.0
+      with:
+        args: -v --min-quality=80 --min-complexity=80 --min-architecture=80 --min-style=80
