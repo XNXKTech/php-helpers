@@ -4,7 +4,7 @@ namespace Test;
 
 use PHPUnit\Framework\TestCase;
 
-class HelpersTest extends TestCase
+class Test extends TestCase
 {
     public function test_autoloading()
     {

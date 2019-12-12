@@ -1,10 +1,10 @@
 <?php
 
-if (! function_exists('compressJson')) {
+if (!function_exists('compressJson')) {
     /**
-     * Compress array to json
+     * Compress array to json.
      *
-     * @param  array  $array
+     * @param array $array
      *
      * @return string
      */
@@ -16,27 +16,28 @@ if (! function_exists('compressJson')) {
     }
 }
 
-if (! function_exists('extractJson')) {
+if (!function_exists('extractJson')) {
     /**
-     * Extract json to array
+     * Extract json to array.
      *
-     * @param  string  $string
+     * @param string $string
      *
      * @return array
      */
     function extractJson(string $string): array
     {
         $array = (array) json_decode([$string][0]);
+
         return (array) json_decode(zlib_decode(base64_decode(array_values($array)[0])));
     }
 }
 
-if (! function_exists('sizeFormat')) {
+if (!function_exists('sizeFormat')) {
     /**
      * Parsing and formatting file sizes in simple, human friendly formats.
      *
      * @param $bytes
-     * @param  int  $decimals
+     * @param int $decimals
      *
      * @return string
      */
@@ -44,6 +45,7 @@ if (! function_exists('sizeFormat')) {
     {
         $size = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
         $factor = floor((strlen($bytes) - 1) / 3);
+
         return (string) sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)).$size[$factor];
     }
 }
