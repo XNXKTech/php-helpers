@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('compressJson')) {
+if (! function_exists('compressJson')) {
     /**
      * Compress array to json.
      *
@@ -16,7 +16,7 @@ if (!function_exists('compressJson')) {
     }
 }
 
-if (!function_exists('extractJson')) {
+if (! function_exists('extractJson')) {
     /**
      * Extract json to array.
      *
@@ -32,7 +32,7 @@ if (!function_exists('extractJson')) {
     }
 }
 
-if (!function_exists('sizeFormat')) {
+if (! function_exists('sizeFormat')) {
     /**
      * Parsing and formatting file sizes in simple, human friendly formats.
      *
@@ -47,5 +47,20 @@ if (!function_exists('sizeFormat')) {
         $factor = floor((strlen($bytes) - 1) / 3);
 
         return (string) sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)).$size[$factor];
+    }
+}
+
+if (! function_exists('generateCacheKeyName')) {
+    /**
+     * Generate Cache key name.
+     *
+     * @param array|null $arg
+     * @param string $space
+     *
+     * @return string
+     */
+    function generateCacheKeyName(array $arg, string $space = ':'): string
+    {
+        return (string) implode($space, array_filter($arg));
     }
 }
