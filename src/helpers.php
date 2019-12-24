@@ -38,7 +38,7 @@ if (! function_exists('sizeFormat')) {
     /**
      * Parsing and formatting file sizes in simple, human friendly formats.
      *
-     * @param $bytes
+     * @param int $bytes
      * @param int $decimals
      *
      * @return string
