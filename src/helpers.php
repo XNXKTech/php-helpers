@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Carbon;
+
 if (! function_exists('compressJson')) {
     /**
      * Compress array to json.
@@ -62,5 +64,18 @@ if (! function_exists('generateCacheKeyName')) {
     function generateCacheKeyName(array $arg, string $space = ':'): string
     {
         return (string) implode($space, array_filter($arg));
+    }
+}
+
+if (! function_exists('carbon')) {
+    /**
+     * @param mixed ...$args
+     *
+     * @return \Illuminate\Support\Carbon
+     * @throws \Exception
+     */
+    function carbon(...$args)
+    {
+        return new Carbon(...$args);
     }
 }
