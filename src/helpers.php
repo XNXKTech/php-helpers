@@ -42,6 +42,7 @@ if (! function_exists('sizeFormat')) {
      * @param int $decimals
      *
      * @return string
+     * @deprecated 1.5.0 This function renamed to formatBytes, not recommended used.
      */
     function sizeFormat(int $bytes, int $decimals = 2): string
     {
