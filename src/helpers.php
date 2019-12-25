@@ -52,6 +52,30 @@ if (! function_exists('sizeFormat')) {
     }
 }
 
+if (! function_exists('formatBytes')) {
+    /**
+     * Parsing and formatting file sizes in simple, human friendly formats.
+     *
+     * @param int $bytes
+     * @param int $decimals
+     *
+     * @return string
+     */
+    function formatBytes(int $bytes, int $decimals = 2): string
+    {
+        $size = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+
+        $bytes = max($bytes, 0);
+        $pow = floor(($bytes ? log($bytes) : 0) / log(1024));
+        $pow = min($pow, count($size) - 1);
+
+        //calculate bytes
+        $bytes /= pow(1024, $pow);
+        //return the bytes
+        return (string) round($bytes, $decimals).' '.$size[$pow];
+    }
+}
+
 if (! function_exists('generateCacheKeyName')) {
     /**
      * Generate Cache key name.
