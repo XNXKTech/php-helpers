@@ -2,7 +2,7 @@
     "name": "unionmuisc/helpers",
     "description": "Provides backwards compatibility for helpers in the Union Music.",
     "keywords": ["helpers"],
-    "license": "MIT",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Teakowa",
