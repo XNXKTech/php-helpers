@@ -14,7 +14,7 @@ jobs:
     - name: Setup PHP
       uses: shivammathur/setup-php@v1
       with:
-        php-version: '7.1.3'
+        php-version: '7.2'
         extension-csv: mbstring, dom, fileinfo
         coverage: xdebug
 
