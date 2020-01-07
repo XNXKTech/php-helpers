@@ -14,6 +14,8 @@ class HelpersTest extends TestCase
     ];
     protected $bytes = 10240;
     protected $cache = ['HelperTest', 'generateCacheKeyName', 'test', 'key'];
+    protected $id = 987654321;
+    protected $base62 = 'KHc6iHtXW3iD';
 
     /** @test */
     public function compressJson()
@@ -49,5 +51,12 @@ class HelpersTest extends TestCase
     {
         $this->assertInstanceOf(Carbon::class, carbon());
         $this->assertEquals(Carbon::parse('Jan 1 2017'), carbon('Jan 1 2017'));
+    }
+
+    /** @test */
+    public function base62()
+    {
+        $this->assertSame($this->base62, base62()->encode($this->id));
+        $this->assertSame($this->id, (int) base62()->decode(base62()->encode($this->id)));
     }
 }

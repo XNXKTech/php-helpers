@@ -104,3 +104,15 @@ if (! function_exists('carbon')) {
         return new Carbon(...$args);
     }
 }
+
+if (! function_exists('base62')) {
+    /**
+     * functional base62 class.
+     *
+     * @return \Tuupola\Base62
+     */
+    function base62()
+    {
+        return new Tuupola\Base62;
+    }
+}
