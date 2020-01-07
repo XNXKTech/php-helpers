@@ -49,7 +49,7 @@ if (! function_exists('sizeFormat')) {
         $size = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
         $factor = floor((strlen($bytes) - 1) / 3);
 
-        return (string) sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)).$size[$factor];
+        return sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)).$size[$factor];
     }
 }
 
@@ -73,7 +73,7 @@ if (! function_exists('formatBytes')) {
         //calculate bytes
         $bytes /= pow(1024, $pow);
         //return the bytes
-        return (string) round($bytes, $decimals).' '.$size[$pow];
+        return round($bytes, $decimals).' '.$size[$pow];
     }
 }
 
