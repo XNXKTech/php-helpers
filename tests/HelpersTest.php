@@ -4,6 +4,7 @@ namespace Test;
 
 use Illuminate\Support\Carbon;
 use PHPUnit\Framework\TestCase;
+use Webpatser\Uuid\Uuid;
 
 class HelpersTest extends TestCase
 {
@@ -16,6 +17,7 @@ class HelpersTest extends TestCase
     protected $cache = ['HelperTest', 'generateCacheKeyName', 'test', 'key'];
     protected $id = 987654321;
     protected $base62 = 'KHc6iHtXW3iD';
+    protected $uuid = '4be0643f-1d98-573b-97cd-ca98a65347dd';
 
     /** @test */
     public function compressJson()
@@ -86,5 +88,12 @@ class HelpersTest extends TestCase
     {
         $this->assertIsString(number_binary(1024));
         $this->assertSame('1 kB', number_binary(1024));
+    }
+
+    /** @test */
+    public function uuid()
+    {
+        $this->assertIsString(uuid(5, 'test', Uuid::NS_DNS)->string);
+        $this->assertSame($this->uuid, uuid(5, 'test', Uuid::NS_DNS)->string);
     }
 }

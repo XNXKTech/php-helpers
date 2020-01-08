@@ -3,6 +3,7 @@
 use Coduo\PHPHumanizer\NumberHumanizer;
 use Coduo\PHPHumanizer\StringHumanizer;
 use Illuminate\Support\Carbon;
+use Webpatser\Uuid\Uuid;
 
 if (! function_exists('compressJson')) {
     /**
@@ -175,5 +176,20 @@ if (! function_exists('number_binary')) {
     function number_binary(int $number, int $precision = 0, string $locale = 'en'): string
     {
         return (string) NumberHumanizer::preciseBinarySuffix($number, $precision, $locale);
+    }
+}
+
+if (! function_exists('uuid')) {
+    /**
+     * @param int $ver
+     * @param string|null $node
+     * @param string|null $ns
+     *
+     * @return \Webpatser\Uuid\Uuid
+     * @throws \Exception
+     */
+    function uuid(int $ver = 1, string $node = null, string $ns = null): Uuid
+    {
+        return Uuid::generate($ver, $node, $ns);
     }
 }
