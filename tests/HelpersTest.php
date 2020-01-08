@@ -59,4 +59,11 @@ class HelpersTest extends TestCase
         $this->assertSame($this->base62, base62()->encode($this->id));
         $this->assertSame($this->id, (int) base62()->decode(base62()->encode($this->id)));
     }
+
+    /** @test */
+    public function str_humanize()
+    {
+        $this->assertIsString(str_humanize('user_id'));
+        $this->assertSame('User id', str_humanize('user_id'));
+    }
 }

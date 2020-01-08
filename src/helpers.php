@@ -1,5 +1,6 @@
 <?php
 
+use Coduo\PHPHumanizer\StringHumanizer;
 use Illuminate\Support\Carbon;
 
 if (! function_exists('compressJson')) {
@@ -114,5 +115,24 @@ if (! function_exists('base62')) {
     function base62()
     {
         return new Tuupola\Base62;
+    }
+}
+
+if (! function_exists('str_humanize')) {
+    /**
+     * @param string $text
+     * @param bool $capitalize
+     * @param string $separator
+     * @param array $forbiddenWords
+     *
+     * @return string
+     */
+    function str_humanize(
+        string $text,
+        bool $capitalize = true,
+        string $separator = '_',
+        array $forbiddenWords = []
+    ): string {
+        return (string) StringHumanizer::humanize($text, $capitalize, $separator, $forbiddenWords);
     }
 }
