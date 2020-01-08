@@ -34,7 +34,7 @@ class HelpersTest extends TestCase
     public function formatBytes()
     {
         $formatBytes = formatBytes($this->bytes);
-        $this->assertSame('10 KB', $formatBytes);
+        $this->assertSame('10 kB', $formatBytes);
     }
 
     /** @test */
