@@ -12,15 +12,17 @@
     "require": {
         "php": "^7.2",
         "ext-json": "*",
-        "ext-zlib": "*",
-        "tuupola/base62": "^2.0"
+        "ext-zlib": "*"
     },
     "require-dev": {
+        "coduo/php-humanizer": "^3.0",
         "friendsofphp/php-cs-fixer": "^2.16",
         "illuminate/support": "^5.7 || ^6.0",
         "nunomaduro/collision": "^3.0",
         "nunomaduro/phpinsights": "^1.11",
-        "phpunit/phpunit": "^8.0"
+        "phpunit/phpunit": "^8.0",
+        "tuupola/base62": "^2.0",
+        "webpatser/laravel-uuid": "^3.0"
     },
     "autoload": {
         "files": [
