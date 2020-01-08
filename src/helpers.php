@@ -1,5 +1,6 @@
 <?php
 
+use Coduo\PHPHumanizer\NumberHumanizer;
 use Coduo\PHPHumanizer\StringHumanizer;
 use Illuminate\Support\Carbon;
 
@@ -134,5 +135,45 @@ if (! function_exists('str_humanize')) {
         array $forbiddenWords = []
     ): string {
         return (string) StringHumanizer::humanize($text, $capitalize, $separator, $forbiddenWords);
+    }
+}
+
+if (! function_exists('number_ordinalize')) {
+    /**
+     * @param int $number
+     * @param string $locale
+     *
+     * @return string
+     */
+    function number_ordinalize(int $number, string $locale = 'en'): string
+    {
+        return (string) NumberHumanizer::ordinalize($number, $locale);
+    }
+}
+
+if (! function_exists('number_ordinal')) {
+    /**
+     * @param int $number
+     * @param string $locale
+     *
+     * @return string
+     */
+    function number_ordinal(int $number, string $locale = 'en'): string
+    {
+        return (string) NumberHumanizer::ordinal($number, $locale);
+    }
+}
+
+if (! function_exists('number_binary')) {
+    /**
+     * @param int $number
+     * @param int $precision
+     * @param string $locale
+     *
+     * @return string
+     */
+    function number_binary(int $number, int $precision = 0, string $locale = 'en'): string
+    {
+        return (string) NumberHumanizer::preciseBinarySuffix($number, $precision, $locale);
     }
 }
