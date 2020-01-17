@@ -11,13 +11,15 @@ jobs:
       with:
         fetch-depth: 1
 
-    - name: Run php-cs-fixer
-      uses: docker://oskarstark/php-cs-fixer-ga
+    - name: PHP CS Fixer
+      uses: StephaneBour/actions-php-cs-fixer@1.0
+      with:
+        dir: './src'
 
     - name: Commit changed files
       uses: stefanzweifel/git-auto-commit-action@v2.1.0
       with:
-        commit_message: Apply php-cs-fixer changes
+        commit_message: Apply PHP CS Fixer changes
         branch: ${{ github.head_ref }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
