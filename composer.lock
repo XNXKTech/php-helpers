@@ -662,12 +662,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "f4762ef0216ae435ab053f68e5bcdff966cf8d4f"
+                "reference": "02433c3659bcdd92758094f5dcdeb951db044979"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/f4762ef0216ae435ab053f68e5bcdff966cf8d4f",
-                "reference": "f4762ef0216ae435ab053f68e5bcdff966cf8d4f",
+                "url": "https://api.github.com/repos/composer/composer/zipball/02433c3659bcdd92758094f5dcdeb951db044979",
+                "reference": "02433c3659bcdd92758094f5dcdeb951db044979",
                 "shasum": ""
             },
             "require": {
@@ -689,8 +689,8 @@
                 "symfony/console": "2.8.38"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7",
-                "phpunit/phpunit-mock-objects": "^2.3 || ^3.0"
+                "phpspec/prophecy": "^1.10",
+                "symfony/phpunit-bridge": "^3.4"
             },
             "suggest": {
                 "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
@@ -734,7 +734,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2020-02-04T11:58:34+00:00"
+            "time": "2020-02-11T12:47:34+00:00"
         },
         {
             "name": "composer/semver",
@@ -1306,16 +1306,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v6.14.0",
+            "version": "v6.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "f1326dfae72c646a8598138b446347954f5e991e"
+                "reference": "a6c7ef89684ce0e724b42c6bfe4b1107aee28a1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/f1326dfae72c646a8598138b446347954f5e991e",
-                "reference": "f1326dfae72c646a8598138b446347954f5e991e",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/a6c7ef89684ce0e724b42c6bfe4b1107aee28a1d",
+                "reference": "a6c7ef89684ce0e724b42c6bfe4b1107aee28a1d",
                 "shasum": ""
             },
             "require": {
@@ -1346,20 +1346,20 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2020-01-07T13:47:03+00:00"
+            "time": "2020-02-08T09:26:21+00:00"
         },
         {
             "name": "illuminate/support",
-            "version": "v6.14.0",
+            "version": "v6.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "78b85d2ae298a46edfc57baa5eddd2594b9d313a"
+                "reference": "2601f1f2e9a1bf7724928c3c2892519667f9983f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/78b85d2ae298a46edfc57baa5eddd2594b9d313a",
-                "reference": "78b85d2ae298a46edfc57baa5eddd2594b9d313a",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/2601f1f2e9a1bf7724928c3c2892519667f9983f",
+                "reference": "2601f1f2e9a1bf7724928c3c2892519667f9983f",
                 "shasum": ""
             },
             "require": {
@@ -1407,7 +1407,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-02-03T14:22:17+00:00"
+            "time": "2020-02-10T23:12:52+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
