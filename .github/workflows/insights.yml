@@ -11,12 +11,12 @@ jobs:
         php-versions: ['7.2', '7.3', '7.4']
     name: PHP ${{ matrix.php-versions }} Test on ${{ matrix.operating-system }}
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
       with:
         fetch-depth: 1
 
     - name: Setup PHP
-      uses: shivammathur/setup-php@v1
+      uses: shivammathur/setup-php@v2
       with:
         php-version: ${{ matrix.php-versions }}
         extensions: mbstring, dom, fileinfo, intl
@@ -38,6 +38,6 @@ jobs:
       run: composer install --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
 
     - name: phpinsights
-      uses: stefanzweifel/phpinsights-action@v1.0.0
+      uses: stefanzweifel/phpinsights-action@v1.1.1
       with:
         args: -v --min-quality=80 --min-complexity=80 --min-architecture=80 --min-style=80

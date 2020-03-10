@@ -7,9 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
       with:
         fetch-depth: 1
+        ref: ${{ github.head_ref }}
 
     - name: PHP CS Fixer
       uses: StephaneBour/actions-php-cs-fixer@1.0
@@ -17,9 +18,7 @@ jobs:
         dir: './src'
 
     - name: Commit changed files
-      uses: stefanzweifel/git-auto-commit-action@v2.1.0
+      uses: stefanzweifel/git-auto-commit-action@v4.1.0
       with:
         commit_message: Apply PHP CS Fixer changes
         branch: ${{ github.head_ref }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
