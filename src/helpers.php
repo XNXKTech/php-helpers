@@ -3,6 +3,7 @@
 use Coduo\PHPHumanizer\NumberHumanizer;
 use Coduo\PHPHumanizer\StringHumanizer;
 use Illuminate\Support\Carbon;
+use Tuupola\Base62;
 use Webpatser\Uuid\Uuid;
 
 if (! function_exists('compressJson')) {
@@ -112,11 +113,11 @@ if (! function_exists('base62')) {
     /**
      * functional base62 class.
      *
-     * @return \Tuupola\Base62
+     * @return Base62
      */
-    function base62()
+    function base62(): Base62
     {
-        return new Tuupola\Base62;
+        return new Base62();
     }
 }
 
