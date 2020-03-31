@@ -63,34 +63,6 @@ class HelpersTest extends TestCase
     }
 
     /** @test */
-    public function str_humanize()
-    {
-        $this->assertIsString(str_humanize('user_id'));
-        $this->assertSame('User id', str_humanize('user_id'));
-    }
-
-    /** @test */
-    public function number_ordinalize()
-    {
-        $this->assertIsString(number_ordinalize(0));
-        $this->assertSame('0th', number_ordinalize(0));
-    }
-
-    /** @test */
-    public function number_ordinal()
-    {
-        $this->assertIsString(number_ordinal(0));
-        $this->assertSame('th', number_ordinal(0));
-    }
-
-    /** @test */
-    public function number_binary()
-    {
-        $this->assertIsString(number_binary(1024));
-        $this->assertSame('1 kB', number_binary(1024));
-    }
-
-    /** @test */
     public function uuid()
     {
         $this->assertIsString(uuid(5, 'test', Uuid::NS_DNS)->string);
