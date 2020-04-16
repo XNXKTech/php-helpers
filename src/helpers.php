@@ -1,7 +1,5 @@
 <?php
 
-use Coduo\PHPHumanizer\NumberHumanizer;
-use Coduo\PHPHumanizer\StringHumanizer;
 use Illuminate\Support\Carbon;
 use Tuupola\Base62;
 use Webpatser\Uuid\Uuid;
