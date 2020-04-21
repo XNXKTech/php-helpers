@@ -36,25 +36,6 @@ if (! function_exists('extractJson')) {
     }
 }
 
-if (! function_exists('sizeFormat')) {
-    /**
-     * Parsing and formatting file sizes in simple, human friendly formats.
-     *
-     * @param int $bytes
-     * @param int $decimals
-     *
-     * @return string
-     * @deprecated 1.5.0 This function renamed to formatBytes, not recommended used.
-     */
-    function sizeFormat(int $bytes, int $decimals = 2): string
-    {
-        $size = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
-        $factor = floor((strlen($bytes) - 1) / 3);
-
-        return sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)).$size[$factor];
-    }
-}
-
 if (! function_exists('formatBytes')) {
     /**
      * Parsing and formatting file sizes in simple, human friendly formats.
