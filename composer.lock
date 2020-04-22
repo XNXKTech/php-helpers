@@ -823,7 +823,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.7.0",
+            "version": "v7.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -867,16 +867,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v7.7.0",
+            "version": "v7.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "9389ffbb5e1dc8f64933a1d718167c4eadcaa5c3"
+                "reference": "7143690b5b718a4a89f8a1ecda79833e75dd138c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/9389ffbb5e1dc8f64933a1d718167c4eadcaa5c3",
-                "reference": "9389ffbb5e1dc8f64933a1d718167c4eadcaa5c3",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/7143690b5b718a4a89f8a1ecda79833e75dd138c",
+                "reference": "7143690b5b718a4a89f8a1ecda79833e75dd138c",
                 "shasum": ""
             },
             "require": {
@@ -925,7 +925,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-04-21T13:47:10+00:00"
+            "time": "2020-04-21T15:58:25+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
