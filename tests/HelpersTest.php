@@ -18,6 +18,7 @@ class HelpersTest extends TestCase
     protected $id = 987654321;
     protected $base62 = 'KHc6iHtXW3iD';
     protected $uuid = '4be0643f-1d98-573b-97cd-ca98a65347dd';
+    protected $password = 'test';
 
     /** @test */
     public function compressJson()
@@ -67,5 +68,14 @@ class HelpersTest extends TestCase
     {
         $this->assertIsString(uuid(5, 'test', Uuid::NS_DNS)->string);
         $this->assertSame($this->uuid, uuid(5, 'test', Uuid::NS_DNS)->string);
+    }
+
+    /** @test */
+    public function getSecret()
+    {
+        $secrets = getSecret(getcwd().'/tests/secrets');
+        $this->assertIsObject($secrets);
+        $this->assertIsArray($secrets->readAll());
+        $this->assertSame($this->password, $secrets->readAll()['password']);
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+use DockerSecrets\Reader\SecretsReader;
 use Illuminate\Support\Carbon;
 use Tuupola\Base62;
 use Webpatser\Uuid\Uuid;
@@ -112,5 +113,17 @@ if (! function_exists('uuid')) {
     function uuid(int $ver = 1, string $node = null, string $ns = null): Uuid
     {
         return Uuid::generate($ver, $node, $ns);
+    }
+}
+
+if (! function_exists('getSecret')) {
+    /**
+     * @param  string  $secretsDir
+     *
+     * @return \DockerSecrets\Reader\SecretsReader
+     */
+    function getSecret(string $secretsDir = '/run/secrets')
+    {
+        return new SecretsReader($secretsDir);
     }
 }
