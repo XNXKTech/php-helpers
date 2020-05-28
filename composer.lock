@@ -4,8 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1fa9c4e4123e44d8c34fd1d7128fff15",
+    "content-hash": "151bb04d12f37200ef50263cd25ddd7e",
     "packages": [
+        {
+            "name": "sadok-f/docker-secrets",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sadok-f/docker-secrets.git",
+                "reference": "9cd1da5a7ed8ef3f429f4d69edaaba9ce3e9f1f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sadok-f/docker-secrets/zipball/9cd1da5a7ed8ef3f429f4d69edaaba9ce3e9f1f0",
+                "reference": "9cd1da5a7ed8ef3f429f4d69edaaba9ce3e9f1f0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "0.4.4",
+                "phpunit/phpunit": "4.2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DockerSecrets\\": "src\\DockerSecrets"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sadok Ferjani",
+                    "email": "sadoknet@gmail.com",
+                    "homepage": "http://sadokferjani.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple PHP library to read docker secrets.",
+            "homepage": "https://github.com/sadok-f/docker-secrets",
+            "keywords": [
+                "docker secret",
+                "docker secrets",
+                "php",
+                "php docker secrets"
+            ],
+            "time": "2017-10-20T15:35:52+00:00"
+        },
         {
             "name": "tuupola/base62",
             "version": "2.0.0",
@@ -248,6 +297,16 @@
                 "dependency",
                 "package"
             ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-10T13:08:05+00:00"
         },
         {
@@ -412,6 +471,12 @@
             "keywords": [
                 "Xdebug",
                 "performance"
+            ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                }
             ],
             "time": "2020-03-01T12:26:26+00:00"
         },
@@ -1503,6 +1568,20 @@
                 "php",
                 "quality",
                 "source"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/nunomaduro",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/nunomaduro",
+                    "type": "patreon"
+                }
             ],
             "time": "2020-03-10T20:43:15+00:00"
         },
@@ -3791,6 +3870,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-27T16:56:45+00:00"
         },
         {
@@ -3908,6 +4001,20 @@
             ],
             "description": "Symfony HttpClient component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-02-26T22:30:10+00:00"
         },
         {
@@ -4026,6 +4133,20 @@
             "keywords": [
                 "mime",
                 "mime-type"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-02-04T09:41:09+00:00"
         },
@@ -4912,5 +5033,6 @@
         "ext-json": "*",
         "ext-zlib": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
