@@ -10,19 +10,20 @@
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": "^7.2.5",
         "ext-json": "*",
         "ext-zlib": "*",
+        "coduo/php-humanizer": "^3.0",
+        "sadok-f/docker-secrets": "^1.0",
         "tuupola/base62": "^2.0",
-        "webpatser/laravel-uuid": "^3.0",
-        "coduo/php-humanizer": "^3.0"
+        "webpatser/laravel-uuid": "^3.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
-        "illuminate/support": "^5.7 || ^6.0",
+        "illuminate/support": "^7.0.8",
         "nunomaduro/collision": "^3.0",
         "nunomaduro/phpinsights": "^1.11",
-        "phpunit/phpunit": "^8.0"
+        "phpunit/phpunit": "^8.5"
     },
     "autoload": {
         "files": [

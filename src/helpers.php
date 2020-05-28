@@ -2,6 +2,7 @@
 
 use Coduo\PHPHumanizer\NumberHumanizer;
 use Coduo\PHPHumanizer\StringHumanizer;
+use DockerSecrets\Reader\SecretsReader;
 use Illuminate\Support\Carbon;
 use Tuupola\Base62;
 use Webpatser\Uuid\Uuid;
@@ -10,7 +11,7 @@ if (! function_exists('compressJson')) {
     /**
      * Compress array to json.
      *
-     * @param array $array
+     * @param  array  $array
      *
      * @return string
      */
@@ -26,7 +27,7 @@ if (! function_exists('extractJson')) {
     /**
      * Extract json to array.
      *
-     * @param string $string
+     * @param  string  $string
      *
      * @return array
      */
@@ -34,26 +35,7 @@ if (! function_exists('extractJson')) {
     {
         $array = (array) json_decode([$string][0]);
 
-        return (array) json_decode(zlib_decode(base64_decode(array_values($array)[0])));
-    }
-}
-
-if (! function_exists('sizeFormat')) {
-    /**
-     * Parsing and formatting file sizes in simple, human friendly formats.
-     *
-     * @param int $bytes
-     * @param int $decimals
-     *
-     * @return string
-     * @deprecated 1.5.0 This function renamed to formatBytes, not recommended used.
-     */
-    function sizeFormat(int $bytes, int $decimals = 2): string
-    {
-        $size = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
-        $factor = floor((strlen($bytes) - 1) / 3);
-
-        return sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)).$size[$factor];
+        return (array) json_decode(zlib_decode(base64_decode(array_values($array)[0], true)));
     }
 }
 
@@ -61,8 +43,8 @@ if (! function_exists('formatBytes')) {
     /**
      * Parsing and formatting file sizes in simple, human friendly formats.
      *
-     * @param int $bytes
-     * @param int $decimals
+     * @param  int  $bytes
+     * @param  int  $decimals
      *
      * @return string
      */
@@ -85,8 +67,8 @@ if (! function_exists('generateCacheKeyName')) {
     /**
      * Generate Cache key name.
      *
-     * @param array|null $arg
-     * @param string $space
+     * @param  array|null  $arg
+     * @param  string  $space
      *
      * @return string
      */
@@ -98,7 +80,7 @@ if (! function_exists('generateCacheKeyName')) {
 
 if (! function_exists('carbon')) {
     /**
-     * @param mixed ...$args
+     * @param  mixed  ...$args
      *
      * @return \Illuminate\Support\Carbon
      * @throws \Exception
@@ -182,9 +164,9 @@ if (! function_exists('number_binary')) {
 
 if (! function_exists('uuid')) {
     /**
-     * @param int $ver
-     * @param string|null $node
-     * @param string|null $ns
+     * @param  int  $ver
+     * @param  string|null  $node
+     * @param  string|null  $ns
      *
      * @return \Webpatser\Uuid\Uuid
      * @throws \Exception
@@ -192,5 +174,17 @@ if (! function_exists('uuid')) {
     function uuid(int $ver = 1, string $node = null, string $ns = null): Uuid
     {
         return Uuid::generate($ver, $node, $ns);
+    }
+}
+
+if (! function_exists('getSecret')) {
+    /**
+     * @param  string  $secretsDir
+     *
+     * @return \DockerSecrets\Reader\SecretsReader
+     */
+    function getSecret(string $secretsDir = '/run/secrets')
+    {
+        return new SecretsReader($secretsDir);
     }
 }
