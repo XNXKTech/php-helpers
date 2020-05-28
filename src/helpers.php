@@ -8,7 +8,7 @@ if (! function_exists('compressJson')) {
     /**
      * Compress array to json.
      *
-     * @param array $array
+     * @param  array  $array
      *
      * @return string
      */
@@ -24,7 +24,7 @@ if (! function_exists('extractJson')) {
     /**
      * Extract json to array.
      *
-     * @param string $string
+     * @param  string  $string
      *
      * @return array
      */
@@ -40,8 +40,8 @@ if (! function_exists('formatBytes')) {
     /**
      * Parsing and formatting file sizes in simple, human friendly formats.
      *
-     * @param int $bytes
-     * @param int $decimals
+     * @param  int  $bytes
+     * @param  int  $decimals
      *
      * @return string
      */
@@ -64,8 +64,8 @@ if (! function_exists('generateCacheKeyName')) {
     /**
      * Generate Cache key name.
      *
-     * @param array|null $arg
-     * @param string $space
+     * @param  array|null  $arg
+     * @param  string  $space
      *
      * @return string
      */
@@ -77,7 +77,7 @@ if (! function_exists('generateCacheKeyName')) {
 
 if (! function_exists('carbon')) {
     /**
-     * @param mixed ...$args
+     * @param  mixed  ...$args
      *
      * @return \Illuminate\Support\Carbon
      * @throws \Exception
@@ -102,9 +102,9 @@ if (! function_exists('base62')) {
 
 if (! function_exists('uuid')) {
     /**
-     * @param int $ver
-     * @param string|null $node
-     * @param string|null $ns
+     * @param  int  $ver
+     * @param  string|null  $node
+     * @param  string|null  $ns
      *
      * @return \Webpatser\Uuid\Uuid
      * @throws \Exception
