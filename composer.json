@@ -13,6 +13,7 @@
         "php": "^7.2.5",
         "ext-json": "*",
         "ext-zlib": "*",
+        "coduo/php-humanizer": "^3.0",
         "sadok-f/docker-secrets": "^1.0",
         "tuupola/base62": "^2.0",
         "webpatser/laravel-uuid": "^3.0"
