@@ -43,8 +43,10 @@ class HelpersTest extends TestCase
     /** @test */
     public function generateCacheKeyName()
     {
-        $this->assertSame('HelperTest:generateCacheKeyName:test:key',
-            generateCacheKeyName($this->cache));
+        $this->assertSame(
+            'HelperTest:generateCacheKeyName:test:key',
+            generateCacheKeyName($this->cache)
+        );
     }
 
     /** @test

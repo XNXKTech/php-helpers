@@ -1,8 +1,8 @@
 <?php
 
-use DockerSecrets\Reader\SecretsReader;
 use Coduo\PHPHumanizer\NumberHumanizer;
 use Coduo\PHPHumanizer\StringHumanizer;
+use DockerSecrets\Reader\SecretsReader;
 use Illuminate\Support\Carbon;
 use Tuupola\Base62;
 use Webpatser\Uuid\Uuid;
@@ -35,7 +35,7 @@ if (! function_exists('extractJson')) {
     {
         $array = (array) json_decode([$string][0]);
 
-        return (array) json_decode(zlib_decode(base64_decode(array_values($array)[0])));
+        return (array) json_decode(zlib_decode(base64_decode(array_values($array)[0], true)));
     }
 }
 
