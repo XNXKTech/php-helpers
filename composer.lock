@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coduo/php-humanizer.git",
-                "reference": "43a5d2ba384fbbd8dfabdeba5abb4ea46281d749"
+                "reference": "f989a91d2d90f5d4bf4922ab9fec1674e7fe024e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coduo/php-humanizer/zipball/43a5d2ba384fbbd8dfabdeba5abb4ea46281d749",
-                "reference": "43a5d2ba384fbbd8dfabdeba5abb4ea46281d749",
+                "url": "https://api.github.com/repos/coduo/php-humanizer/zipball/f989a91d2d90f5d4bf4922ab9fec1674e7fe024e",
+                "reference": "f989a91d2d90f5d4bf4922ab9fec1674e7fe024e",
                 "shasum": ""
             },
             "require": {
@@ -66,7 +66,7 @@
                 "humanizer",
                 "php"
             ],
-            "time": "2020-05-17T14:00:12+00:00"
+            "time": "2020-06-04T20:46:00+00:00"
         },
         {
             "name": "sadok-f/docker-secrets",
@@ -1431,7 +1431,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.14.1",
+            "version": "v7.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -1475,16 +1475,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v7.14.1",
+            "version": "v7.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "778698d5f2cc43fc0bceff796c71fb375bfa3351"
+                "reference": "6fffd3f2a1d81fa29682eac43ef8701073c4214d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/778698d5f2cc43fc0bceff796c71fb375bfa3351",
-                "reference": "778698d5f2cc43fc0bceff796c71fb375bfa3351",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/6fffd3f2a1d81fa29682eac43ef8701073c4214d",
+                "reference": "6fffd3f2a1d81fa29682eac43ef8701073c4214d",
                 "shasum": ""
             },
             "require": {
@@ -1533,7 +1533,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-06-02T18:00:46+00:00"
+            "time": "2020-06-08T02:42:53+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
