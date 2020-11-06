@@ -1,6 +1,6 @@
 <?php
 
-namespace Test;
+namespace Tests;
 
 use Illuminate\Support\Carbon;
 use PHPUnit\Framework\TestCase;
@@ -8,17 +8,25 @@ use Webpatser\Uuid\Uuid;
 
 class HelpersTest extends TestCase
 {
-    protected $compressJson = [
+    public array $compressJson = [
         'status' => 200,
         'message' => 'success',
         'data' => [],
     ];
-    protected $bytes = 10240;
-    protected $cache = ['HelperTest', 'generateCacheKeyName', 'test', 'key'];
-    protected $id = 987654321;
-    protected $base62 = 'KHc6iHtXW3iD';
-    protected $uuid = '4be0643f-1d98-573b-97cd-ca98a65347dd';
-    protected $password = 'test';
+    public int $bytes = 10240;
+    public array $cache = ['HelperTest', 'generateCacheKeyName', 'test', 'key'];
+    public int $id = 987654321;
+    public string $base62 = 'KHc6iHtXW3iD';
+    public string $uuid = '4be0643f-1d98-573b-97cd-ca98a65347dd';
+    public string $password = 'test';
+    public string $key = '0123456789zxcvbn';
+    public string $iv = '0123456789abcdef';
+    public string $bank_number = '6661333775544230';
+    public string $phone = '176138189090';
+    public string $china_id = '110101192008297192';
+    public string $encrypted_phone = '4633986310737477622';
+    public string $encrypted_bank_number = '40456648251653137260';
+    public string $encrypted_china_id = '80766759272141449076';
 
     /** @test */
     public function compressJson()
@@ -107,5 +115,53 @@ class HelpersTest extends TestCase
         $this->assertIsObject($secrets);
         $this->assertIsArray($secrets->readAll());
         $this->assertSame($this->password, $secrets->readAll()['password']);
+    }
+
+    /** @test */
+    public function testEncryptPhone()
+    {
+        $secret = fpe($this->key)->encrypt($this->phone, 10, false, $this->password, $this->iv);
+        $this->assertIsString($secret);
+        $this->assertSame($this->encrypted_phone, $secret);
+    }
+
+    /** @test */
+    public function testEncryptBank()
+    {
+        $secret = fpe($this->key)->encrypt($this->bank_number, 10, false, $this->password, $this->iv);
+        $this->assertIsString($secret);
+        $this->assertSame($this->encrypted_bank_number, $secret);
+    }
+
+    /** @test */
+    public function testEncryptChinaIDNumber()
+    {
+        $secret = fpe($this->key)->encrypt($this->china_id, 10, false, $this->password, $this->iv);
+        $this->assertIsString($secret);
+        $this->assertSame($this->encrypted_china_id, $secret);
+    }
+
+    /** @test */
+    public function testDecryptPhone()
+    {
+        $plainValue = fpe($this->key)->decrypt($this->encrypted_phone, 10, false, $this->password, $this->iv);
+        $this->assertIsString($plainValue);
+        $this->assertSame($this->phone, $plainValue);
+    }
+
+    /** @test */
+    public function testDecryptBank()
+    {
+        $plainValue = fpe($this->key)->decrypt($this->encrypted_bank_number, 10, false, $this->password, $this->iv);
+        $this->assertIsString($plainValue);
+        $this->assertSame($this->bank_number, $plainValue);
+    }
+
+    /** @test */
+    public function testDecryptChinaIDNumber()
+    {
+        $plainValue = fpe($this->key)->decrypt($this->encrypted_china_id, 10, false, $this->password, $this->iv);
+        $this->assertIsString($plainValue);
+        $this->assertSame($this->china_id, $plainValue);
     }
 }

@@ -2,6 +2,7 @@
 
 use Coduo\PHPHumanizer\NumberHumanizer;
 use Coduo\PHPHumanizer\StringHumanizer;
+use Cryptomute\Cryptomute;
 use DockerSecrets\Reader\SecretsReader;
 use Illuminate\Support\Carbon;
 use Tuupola\Base62;
@@ -186,5 +187,19 @@ if (! function_exists('getSecret')) {
     function getSecret(string $secretsDir = '/run/secrets')
     {
         return new SecretsReader($secretsDir);
+    }
+}
+
+if (! function_exists('fpe')) {
+    /**
+     * @param  string  $key
+     * @param  string  $cipher
+     * @param  int  $round
+     *
+     * @return \Cryptomute\Cryptomute
+     */
+    function fpe(string $key, string $cipher = 'aes-256-cbc', int $round = 7): Cryptomute
+    {
+        return new Cryptomute($cipher, $key, $round);
     }
 }
