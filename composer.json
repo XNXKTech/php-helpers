@@ -20,12 +20,12 @@
         "webpatser/laravel-uuid": "^3.0"
     },
     "require-dev": {
-        "roave/security-advisories": "dev-master",
         "friendsofphp/php-cs-fixer": "^2.16",
         "illuminate/support": "^8.0",
         "nunomaduro/collision": "^3.0",
         "nunomaduro/phpinsights": "^1.11",
-        "phpunit/phpunit": "^9.0"
+        "phpunit/phpunit": "^9.0",
+        "roave/security-advisories": "dev-latest"
     },
     "autoload": {
         "files": [
