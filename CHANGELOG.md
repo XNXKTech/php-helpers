@@ -1,4 +1,24 @@
 
+<a name="v1.6.4"></a>
+## [v1.6.4](https://github.com/lhmusic/helpers/compare/v1.6.3...v1.6.4) (2020-11-15)
+
+
+<a name="v1.6.3"></a>
+## [v1.6.3](https://github.com/lhmusic/helpers/compare/v1.6.2...v1.6.3) (2020-11-12)
+
+
+<a name="v1.6.2"></a>
+## [v1.6.2](https://github.com/lhmusic/helpers/compare/v1.6.1...v1.6.2) (2020-11-11)
+
+### Code Refactoring
+
+* **phpunit:** replace Phpunit\Listener to Phpunit\Printer
+
+
+<a name="v1.6.1"></a>
+## [v1.6.1](https://github.com/lhmusic/helpers/compare/v1.6.0...v1.6.1) (2020-11-06)
+
+
 <a name="v1.6.0"></a>
 ## [v1.6.0](https://github.com/lhmusic/helpers/compare/v1.5.0...v1.6.0) (2020-11-06)
 
