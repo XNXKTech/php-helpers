@@ -1814,16 +1814,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v2.16.7",
+            "version": "v2.16.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "4e35806a6d7d8510d6842ae932e8832363d22c87"
+                "reference": "0f8286f9601a211c83bebf7f3125610479ec084a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/4e35806a6d7d8510d6842ae932e8832363d22c87",
-                "reference": "4e35806a6d7d8510d6842ae932e8832363d22c87",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/0f8286f9601a211c83bebf7f3125610479ec084a",
+                "reference": "0f8286f9601a211c83bebf7f3125610479ec084a",
                 "shasum": ""
             },
             "require": {
@@ -1832,7 +1832,7 @@
                 "doctrine/annotations": "^1.2",
                 "ext-json": "*",
                 "ext-tokenizer": "*",
-                "php": "^7.1",
+                "php": "^5.6 || ^7.0",
                 "php-cs-fixer/diff": "^1.3",
                 "symfony/console": "^3.4.43 || ^4.1.6 || ^5.0",
                 "symfony/event-dispatcher": "^3.0 || ^4.0 || ^5.0",
@@ -1854,6 +1854,7 @@
                 "php-cs-fixer/phpunit-constraint-isidenticalstring": "^1.2",
                 "php-cs-fixer/phpunit-constraint-xmlmatchesxsd": "^1.2.1",
                 "phpunit/phpunit": "^5.7.27 || ^6.5.14 || ^7.1",
+                "phpunitgoodpractices/polyfill": "^1.5",
                 "phpunitgoodpractices/traits": "^1.9.1",
                 "symfony/phpunit-bridge": "^5.1",
                 "symfony/yaml": "^3.0 || ^4.0 || ^5.0"
@@ -1907,7 +1908,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-27T22:44:27+00:00"
+            "time": "2020-12-06T22:38:21+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -6390,16 +6391,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.1.8",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "f00872c3f6804150d6a0f73b4151daab96248101"
+                "reference": "240e74140d4d956265048f3025c0aecbbc302d54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/f00872c3f6804150d6a0f73b4151daab96248101",
-                "reference": "f00872c3f6804150d6a0f73b4151daab96248101",
+                "url": "https://api.github.com/repos/symfony/process/zipball/240e74140d4d956265048f3025c0aecbbc302d54",
+                "reference": "240e74140d4d956265048f3025c0aecbbc302d54",
                 "shasum": ""
             },
             "require": {
@@ -6445,7 +6446,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-24T12:01:57+00:00"
+            "time": "2020-11-02T15:47:15+00:00"
         },
         {
             "name": "symfony/service-contracts",
