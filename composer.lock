@@ -1818,12 +1818,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "d70c3686897f550e102a10a0ce951965e84eeda0"
+                "reference": "5274ce3d3200a2b374baa42143cb9dfcdcc2fa52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/d70c3686897f550e102a10a0ce951965e84eeda0",
-                "reference": "d70c3686897f550e102a10a0ce951965e84eeda0",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/5274ce3d3200a2b374baa42143cb9dfcdcc2fa52",
+                "reference": "5274ce3d3200a2b374baa42143cb9dfcdcc2fa52",
                 "shasum": ""
             },
             "require": {
@@ -1913,7 +1913,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-07T20:33:17+00:00"
+            "time": "2020-12-07T20:43:00+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -2053,16 +2053,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.16.1",
+            "version": "v8.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "f67ddf297fcba7768b428bfe4c9c690b41673344"
+                "reference": "c8910d52254408c7245dd8044fb3e5b09292673f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/f67ddf297fcba7768b428bfe4c9c690b41673344",
-                "reference": "f67ddf297fcba7768b428bfe4c9c690b41673344",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/c8910d52254408c7245dd8044fb3e5b09292673f",
+                "reference": "c8910d52254408c7245dd8044fb3e5b09292673f",
                 "shasum": ""
             },
             "require": {
@@ -2112,7 +2112,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-11-19T17:43:32+00:00"
+            "time": "2020-11-29T20:24:47+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
