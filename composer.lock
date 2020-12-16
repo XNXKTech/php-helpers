@@ -2006,7 +2006,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.18.1",
+            "version": "v8.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
