@@ -2050,16 +2050,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.19.0",
+            "version": "v8.20.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "91c965bddd834aaae650043c4726bedf00d033dd"
+                "reference": "f221a31bfd107d173510e15e34c3aa667c75602d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/91c965bddd834aaae650043c4726bedf00d033dd",
-                "reference": "91c965bddd834aaae650043c4726bedf00d033dd",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/f221a31bfd107d173510e15e34c3aa667c75602d",
+                "reference": "f221a31bfd107d173510e15e34c3aa667c75602d",
                 "shasum": ""
             },
             "require": {
@@ -2109,7 +2109,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-12-14T14:16:56+00:00"
+            "time": "2020-12-22T16:13:18+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
