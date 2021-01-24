@@ -2050,7 +2050,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.23.1",
+            "version": "v8.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
