@@ -651,22 +651,22 @@
         },
         {
             "name": "teakowa/cryptomute",
-            "version": "v1.4.1",
+            "version": "v1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Teakowa/cryptomute.git",
-                "reference": "da0197a0472303e8c28ef863ae5edd096a147eaf"
+                "reference": "6d95137c624538320831fd8f0582878582979429"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Teakowa/cryptomute/zipball/da0197a0472303e8c28ef863ae5edd096a147eaf",
-                "reference": "da0197a0472303e8c28ef863ae5edd096a147eaf",
+                "url": "https://api.github.com/repos/Teakowa/cryptomute/zipball/6d95137c624538320831fd8f0582878582979429",
+                "reference": "6d95137c624538320831fd8f0582878582979429",
                 "shasum": ""
             },
             "require": {
                 "ext-gmp": "*",
                 "ext-openssl": "*",
-                "php": "^7.2.5"
+                "php": "^7.2.5 | ^8.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.16",
@@ -704,7 +704,7 @@
                 "obfuscate",
                 "permute"
             ],
-            "time": "2020-08-29T05:42:45+00:00"
+            "time": "2021-11-21T12:20:03+00:00"
         },
         {
             "name": "tuupola/base62",
