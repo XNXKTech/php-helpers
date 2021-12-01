@@ -58,7 +58,7 @@ if (! function_exists('formatBytes')) {
         $pow = min($pow, count($size) - 1);
 
         //calculate bytes
-        $bytes /= pow(1024, $pow);
+        $bytes /= 1024 ** $pow;
         //return the bytes
         return round($bytes, $decimals).' '.$size[$pow];
     }
