@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Coduo\PHPHumanizer\NumberHumanizer;
 use Coduo\PHPHumanizer\StringHumanizer;
 use Cryptomute\Cryptomute;
