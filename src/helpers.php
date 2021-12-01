@@ -68,14 +68,14 @@ if (! function_exists('generateCacheKeyName')) {
     /**
      * Generate Cache key name.
      *
-     * @param  array|null  $arg
+     * @param  array  $arg
      * @param  string  $space
      *
      * @return string
      */
     function generateCacheKeyName(array $arg, string $space = ':'): string
     {
-        return (string) implode($space, array_filter($arg));
+        return implode($space, array_filter($arg));
     }
 }
 
@@ -119,7 +119,7 @@ if (! function_exists('str_humanize')) {
         string $separator = '_',
         array $forbiddenWords = []
     ): string {
-        return (string) StringHumanizer::humanize($text, $capitalize, $separator, $forbiddenWords);
+        return StringHumanizer::humanize($text, $capitalize, $separator, $forbiddenWords);
     }
 }
 
@@ -132,7 +132,7 @@ if (! function_exists('number_ordinalize')) {
      */
     function number_ordinalize(int $number, string $locale = 'en'): string
     {
-        return (string) NumberHumanizer::ordinalize($number, $locale);
+        return NumberHumanizer::ordinalize($number, $locale);
     }
 }
 
@@ -145,7 +145,7 @@ if (! function_exists('number_ordinal')) {
      */
     function number_ordinal(int $number, string $locale = 'en'): string
     {
-        return (string) NumberHumanizer::ordinal($number, $locale);
+        return NumberHumanizer::ordinal($number, $locale);
     }
 }
 
@@ -184,7 +184,7 @@ if (! function_exists('getSecret')) {
      *
      * @return \DockerSecrets\Reader\SecretsReader
      */
-    function getSecret(string $secretsDir = '/run/secrets')
+    function getSecret(string $secretsDir = '/run/secrets'): SecretsReader
     {
         return new SecretsReader($secretsDir);
     }
