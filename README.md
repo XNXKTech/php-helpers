@@ -1,4 +1,4 @@
-# ![php-helpers](https://socialify.git.ci/XNXKTech/php-helpers/image?font=Bitter&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FUnited-Music%2Fs2.16345.net%2Fmaster%2Flogo%2Flogo.png&owner=1&pattern=Circuit%20Board&theme=Light)
+# ![php-helpers](https://socialify.git.ci/XNXKTech/php-helpers/image?font=Bitter&language=1&logo=https://avatars.githubusercontent.com/u/94216091?s=200&v=4&owner=1&pattern=Circuit%20Board&theme=Light)
 
 ![Travis (.org)](https://img.shields.io/travis/xnxktech/helpers?style=flat-square)
 ![PHP from Packagist](https://img.shields.io/packagist/php-v/xnxktech/helpers?style=flat-square)
