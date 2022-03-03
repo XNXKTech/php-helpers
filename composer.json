@@ -15,7 +15,7 @@
         "ext-zlib": "*",
         "coduo/php-humanizer": "^4.x-dev",
         "sadok-f/docker-secrets": "^1.0",
-        "teakowa/cryptomute": "^1.4",
+        "teakowa/cryptomute": "^1.4.3",
         "tuupola/base62": "^2.0",
         "webpatser/laravel-uuid": "^4.0"
     },
