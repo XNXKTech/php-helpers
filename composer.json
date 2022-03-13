@@ -24,6 +24,7 @@
         "illuminate/support": "^8.0",
         "nunomaduro/collision": "^5.1",
         "nunomaduro/phpinsights": "^2.0",
+        "pestphp/pest": "^1.21",
         "phpunit/phpunit": "^9.0",
         "roave/security-advisories": "dev-latest"
     },
@@ -47,7 +48,8 @@
         "sort-packages": true,
         "optimize-autoloader": true,
         "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "pestphp/pest-plugin": true
         }
     },
     "minimum-stability": "dev",
