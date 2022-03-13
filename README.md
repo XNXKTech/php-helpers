@@ -1,6 +1,6 @@
 # ![php-helpers](https://socialify.git.ci/XNXKTech/php-helpers/image?font=Bitter&language=1&logo=https://avatars.githubusercontent.com/u/94216091?s=200&v=4&owner=1&pattern=Circuit%20Board&theme=Light)
 
-[![test](https://github.com/XNXKTech/php-helpers/actions/workflows/tests.yml/badge.svg)](https://github.com/XNXKTech/php-helpers/actions/workflows/tests.yml)
+[![Tests](https://github.com/XNXKTech/php-helpers/actions/workflows/tests.yml/badge.svg)](https://github.com/XNXKTech/php-helpers/actions/workflows/tests.yml)
 ![PHP from Packagist](https://img.shields.io/packagist/php-v/xnxk/helpers?style=flat-square)
 ![Packagist Version](https://img.shields.io/packagist/v/xnxk/helpers?style=flat-square)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/xnxktech/php-helpers?style=flat-square)
@@ -11,7 +11,7 @@
 [![996.icu](https://img.shields.io/badge/Link-996.icu-red.svg?style=flat-square)](https://996.icu)
 
 
-This package provides convenient helper functions for UnionMusic PHP development.
+This package provides convenient helper functions for XNXKTech PHP development.
 
 ## Installation
 
