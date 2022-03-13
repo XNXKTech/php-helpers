@@ -88,7 +88,7 @@ if (! function_exists('carbon')) {
      * @return \Illuminate\Support\Carbon
      * @throws \Exception
      */
-    function carbon(...$args)
+    function carbon(...$args): Carbon
     {
         return new Carbon(...$args);
     }
