@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b29b191ba77c1fec699c62fe53b0936",
+    "content-hash": "150a36d2975dded3dcf7fbb002ae1e22",
     "packages": [
         {
             "name": "aeon-php/calendar",
@@ -57,16 +57,16 @@
         },
         {
             "name": "coduo/php-humanizer",
-            "version": "4.x-dev",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coduo/php-humanizer.git",
-                "reference": "5a28da797b941d35d03940c4d19fee386667ccd1"
+                "reference": "d941401805af0daca3ae3b449f4e39f65e4e1142"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coduo/php-humanizer/zipball/5a28da797b941d35d03940c4d19fee386667ccd1",
-                "reference": "5a28da797b941d35d03940c4d19fee386667ccd1",
+                "url": "https://api.github.com/repos/coduo/php-humanizer/zipball/d941401805af0daca3ae3b449f4e39f65e4e1142",
+                "reference": "d941401805af0daca3ae3b449f4e39f65e4e1142",
                 "shasum": ""
             },
             "require": {
@@ -82,7 +82,6 @@
             "suggest": {
                 "ext-intl": "Required if you are going to use humanizer with locales different than en_EN"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -111,9 +110,15 @@
             ],
             "support": {
                 "issues": "https://github.com/coduo/php-humanizer/issues",
-                "source": "https://github.com/coduo/php-humanizer/tree/4.x"
+                "source": "https://github.com/coduo/php-humanizer/tree/4.0.2"
             },
-            "time": "2021-09-13T10:21:17+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/norberttech",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-06-20T14:32:02+00:00"
         },
         {
             "name": "sadok-f/docker-secrets",
@@ -7621,7 +7626,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "coduo/php-humanizer": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
