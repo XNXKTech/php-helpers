@@ -205,3 +205,18 @@ if (! function_exists('fpe')) {
         return new Cryptomute($cipher, $key, $round);
     }
 }
+
+if (!function_exists('readEnv')) {
+    /**
+     * 读取env.
+     *
+     * @param string $name
+     * @param $default
+     *
+     * @return array|false|mixed|string
+     */
+    function readEnv(string $name, $default = null): mixed
+    {
+        return getenv($name) ?: env($name, $default);
+    }
+}
