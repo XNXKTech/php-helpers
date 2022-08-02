@@ -740,16 +740,16 @@
         },
         {
             "name": "teakowa/cryptomute",
-            "version": "v1.4.3",
+            "version": "v1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Teakowa/cryptomute.git",
-                "reference": "94d91ba9fd5d6907bf6eb6ff7ff051e0e5356516"
+                "reference": "7e8f15dc6ecbf9262f3e2e0b1e7467590865966e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Teakowa/cryptomute/zipball/94d91ba9fd5d6907bf6eb6ff7ff051e0e5356516",
-                "reference": "94d91ba9fd5d6907bf6eb6ff7ff051e0e5356516",
+                "url": "https://api.github.com/repos/Teakowa/cryptomute/zipball/7e8f15dc6ecbf9262f3e2e0b1e7467590865966e",
+                "reference": "7e8f15dc6ecbf9262f3e2e0b1e7467590865966e",
                 "shasum": ""
             },
             "require": {
@@ -759,7 +759,8 @@
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.0",
-                "phpunit/phpunit": "^8.5"
+                "pestphp/pest": "^1.21",
+                "phpunit/phpunit": "^8.5 || ^9.0"
             },
             "type": "library",
             "extra": {
@@ -795,9 +796,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Teakowa/cryptomute/issues",
-                "source": "https://github.com/Teakowa/cryptomute/tree/v1.4.3"
+                "source": "https://github.com/Teakowa/cryptomute/tree/v1.4.4"
             },
-            "time": "2022-03-03T05:58:16+00:00"
+            "time": "2022-03-13T09:55:04+00:00"
         },
         {
             "name": "tuupola/base62",
