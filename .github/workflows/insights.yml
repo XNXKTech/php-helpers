@@ -5,7 +5,6 @@ on: push
 jobs:
   phpinsights:
     name: PHP Insights
-    uses: XNXKTech/workflows/.github/workflows/laravel-insights.yml@main
+    uses: XNXKTech/workflows/.github/workflows/php-insights.yml@main
     with:
-      versions: "[\"8.0\", \"8.1\"]"
-      stability: "[\"prefer-stable\"]"
+      versions: "['8.0', '8.1']"
