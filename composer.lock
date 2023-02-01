@@ -734,16 +734,16 @@
         },
         {
             "name": "teakowa/cryptomute",
-            "version": "v1.4.4",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Teakowa/cryptomute.git",
-                "reference": "7e8f15dc6ecbf9262f3e2e0b1e7467590865966e"
+                "reference": "e088d7dc2850ac4fcf245be7a5991c0268398106"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Teakowa/cryptomute/zipball/7e8f15dc6ecbf9262f3e2e0b1e7467590865966e",
-                "reference": "7e8f15dc6ecbf9262f3e2e0b1e7467590865966e",
+                "url": "https://api.github.com/repos/Teakowa/cryptomute/zipball/e088d7dc2850ac4fcf245be7a5991c0268398106",
+                "reference": "e088d7dc2850ac4fcf245be7a5991c0268398106",
                 "shasum": ""
             },
             "require": {
@@ -790,9 +790,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Teakowa/cryptomute/issues",
-                "source": "https://github.com/Teakowa/cryptomute/tree/v1.4.4"
+                "source": "https://github.com/Teakowa/cryptomute/tree/v1.5.0"
             },
-            "time": "2022-03-13T09:55:04+00:00"
+            "time": "2023-01-31T13:35:09+00:00"
         },
         {
             "name": "tuupola/base62",
